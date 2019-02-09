@@ -4,50 +4,46 @@
 // --------------------------------------------
 $color: (
 	typography: (
-		1: #1D2B4C,
-		2: #5B6A87,
-		3: #919EB7,
-		1i: #FFF,
-		2i: rgba( #FFF, .8 )
+		1: #FFFFFF,
+		2: #768696,
+		3: #9CACBC
 	),
 	bg: (
-		1: #FFFFFF,
-		2: #F4F7FE,
-		3: #E7EBF6
+		1: #141516,
+		2: #222424,
+		3: #454C4C
 	),
 	primary: (
-		1: #0181F6,
-		2: #82DDFC,
-		3: #0066C3,
-		4: #DEEFFF
+		1: #4353FF,
+		2: #5D6AFF,
+		3: #1024FF
  	),
- 	secondary: (
-		1: #FF9083,
-		2: #FFBEB6,
-		3: #FF6250,
-		4: #FFE9E7
- 	)
+	secondary: (
+		1: #43F1FF,
+		2: #76F5FF,
+		3: #10EDFF
+	)
 );
 
 // --------------------------------------------
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-	base: '"Hind Vadodara", sans-serif', // font-family(base)
-	heading: 'Frank Ruhl Libre, serif', // font-family(heading)
+	base: '"Heebo", sans-serif', // font-family(base)
+	heading: '"Titillium Web", sans-serif', // font-family(heading)
 	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
 	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
 );
 
 $font__sizes: (
-	alpha:   ( 48px, 58px, -0.1px ), // font-size, line-height, kerning (use '0' if don't want to output any kerning)
-	beta:    ( 40px, 50px, -0.1px ),
+	alpha:   ( 48px, 58px, 0px ), // font-size, line-height, kerning (use '0' if don't want to output any kerning)
+	beta:    ( 40px, 50px, -0.2px ),
 	gamma:   ( 32px, 42px, -0.1px ),
 	delta:   ( 24px, 34px, -0.1px ),
-	epsilon: ( 20px, 30px, -0.1px ),
-	zeta:    ( 18px, 27px, -0.1px ),
-	eta:     ( 16px, 24px, -0.1px ),
-	theta:   ( 14px, 22px, 0px )
+	epsilon: ( 20px, 32px, -0.1px ),
+	zeta:    ( 18px, 30px, -0.1px ),
+	eta:     ( 16px, 30px, -0.1px ),
+	theta:   ( 14px, 20px, 0px )
 );
 
 $font__scale: (
@@ -57,9 +53,9 @@ $font__scale: (
 		3: map-get($font__sizes, gamma),   // H3
 		4: map-get($font__sizes, epsilon), // H4, H5, H6
 		5: map-get($font__sizes, epsilon), // Body
-		6: map-get($font__sizes, zeta),    // Text small (e.g. faq's)
-		7: map-get($font__sizes, eta),     // Text smaller (e.g. pricing, testimonials)
-		8: map-get($font__sizes, theta)    // Footer area
+		6: map-get($font__sizes, zeta),    // Text small
+		7: map-get($font__sizes, eta),     // Text smaller (e.g. forms, buttons)
+		8: map-get($font__sizes, theta)	   // Footer links
 	),
 	mobile: (                              // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
 		1: map-get($font__sizes, beta),    // H1
@@ -67,16 +63,16 @@ $font__scale: (
 		3: map-get($font__sizes, delta),   // H3
 		4: map-get($font__sizes, epsilon), // H4, H5, H6
 		5: map-get($font__sizes, epsilon), // Body
-		6: map-get($font__sizes, zeta),    // Text small (e.g. faq's)
-		7: map-get($font__sizes, eta),     // Text smaller (e.g. pricing, testimonials)
-		8: map-get($font__sizes, theta)    // Footer area
+		6: map-get($font__sizes, zeta),    // Text small
+		7: map-get($font__sizes, eta),     // Text smaller (e.g. forms, buttons)
+		8: map-get($font__sizes, theta)	   // Footer links
 	)
 );
 
 $font__weight: (
 	regular: 400, 	// font__weight(regular)
 	medium: 500,	// font__weight(medium)
-	semibold: 600,	// font__weight(semi-bold)
+	semibold: 600,	// font__weight(semibold)
 	bold: 700		// font__weight(bold)
 );
 

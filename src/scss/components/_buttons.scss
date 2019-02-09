@@ -6,27 +6,21 @@
             @include font-size(7, desktop, true, false, true);
         }
     }
-    @include font-weight(semibold);
+    @include font-weight(medium);
     line-height: 16px;
     text-decoration: none !important;
     background-color: color(bg, 1);
-	background: linear-gradient(65deg, color(bg, 1) 0, color(primary, 4) 100%);
     color: color(primary, 1) !important;
     border: none;
-    border-radius: 2px;
     cursor: pointer;
     justify-content: center;
-    padding: 16px 32px;
+    padding: 16px 36px;
 	height: 48px;
     text-align: center;
     white-space: nowrap;
 
     &:active {
         outline: 0;
-    }
-
-    &::before {
-        border-radius: 2px;
     }
 }
 
@@ -40,15 +34,14 @@
         right: 0;
         bottom: 0;
         left: 0;
-        box-shadow: 0 8px 24px rgba(color(typography, 1), .12);
-        mix-blend-mode: multiply;
+        box-shadow: 0 8px 48px rgba(color(primary, 1), .48);
         transition: box-shadow .15s ease;
     }
 
     &:hover {
 
         &::before {
-            box-shadow: 0 8px 24px rgba(color(typography, 1), .25);
+            box-shadow: 0 8px 48px rgba(color(primary, 1), .6);
         }
     }
 }
@@ -60,61 +53,30 @@
     &.button-shadow {
 
         &::before {
-            box-shadow: 0 4px 16px rgba(color(typography, 1), .12);
+            box-shadow: 0 4px 32px rgba(color(primary, 1), .48);
         }
 
         &:hover {
 
             &::before {
-                box-shadow: 0 4px 16px rgba(color(typography, 1), .25);
+                box-shadow: 0 4px 32px rgba(color(primary, 1), .6);
             }
         }
     }
 }
 
 .button-primary {
-    color: color(typography, 1i) !important;
+    color: color(typography, 1) !important;
     transition: background .15s ease;
 }
 
 .button-primary {
-    background: mix(color(secondary, 1), color(secondary, 3));
-    background: linear-gradient(65deg, color(secondary, 1) 0, color(secondary, 3) 100%);
+    background: mix(color(primary, 1), color(primary, 2));
+    background: linear-gradient(65deg, color(primary, 1) 0, color(primary, 2) 100%);
 
     &:hover {
-        background: lighten(mix(color(secondary, 1), color(secondary, 3)), 1%);
-        background: linear-gradient(65deg, lighten(color(secondary, 1), 1%) 0, lighten(color(secondary, 3), 1%) 100%);
-    }
-
-    &.button-shadow {
-
-        &::before {
-            box-shadow: 0 8px 16px rgba(color(secondary, 1), .25);
-        }
-
-        &:hover {
-
-            &::before {
-                box-shadow: 0 8px 16px rgba(color(secondary, 1), .4);
-            }
-        }
-    }
-
-    .button-sm {
-
-        &.button-shadow {
-
-            &::before {
-                box-shadow: 0 4px 16px rgba(color(secondary, 1), .25);
-            }
-
-            &:hover {
-
-                &::before {
-                    box-shadow: 0 4px 16px rgba(color(secondary, 1), .4);
-                }
-            }
-        }
+        background: lighten(mix(color(primary, 1), color(primary, 2)), 1%);
+        background: linear-gradient(65deg, lighten(color(primary, 1), 1%) 0, lighten(color(primary, 2), 1%) 100%);
     }
 }
 

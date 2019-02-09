@@ -1,4 +1,4 @@
-# Sienna
+# Ellie
 
 A landing page template.
 

@@ -1,15 +1,15 @@
 {
-  "name": "sienna",
+  "name": "ellie",
   "version": "1.0.0",
-  "description": "Sienna Template",
+  "description": "Ellie Template",
   "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
   "license": "GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/sienna.git"
+    "url": "https://bitbucket.org/pasqualevitiello/ellie.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/sienna/issues"
+    "url": "https://bitbucket.org/pasqualevitiello/ellie/issues"
   },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
@@ -49,6 +49,6 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "homepage": "https://bitbucket.org/pasqualevitiello/sienna#readme",
+  "homepage": "https://bitbucket.org/pasqualevitiello/ellie#readme",
   "main": ".eslintrc.js"
 }
